@@ -1,0 +1,31 @@
+2023-03-18 16:38:36 INFO  c.m.MPayApplication:55 - Starting MPayApplication using Java 1.8.0_301 on DESKTOP-795BQ5P with PID 22552 (W:\Jawk Project\Mpay Project\Git\mpay\backend\bin\main started by Admin in W:\Jawk Project\Mpay Project\Git\mpay\backend)
+2023-03-18 16:38:36 DEBUG c.m.MPayApplication:56 - Running with Spring Boot v2.7.6, Spring v5.3.24
+2023-03-18 16:38:36 INFO  c.m.MPayApplication:631 - No active profile set, falling back to 1 default profile: "default"
+2023-03-18 16:38:39 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2023-03-18 16:38:39 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-03-18 16:38:40 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2023-03-18 16:38:40 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-18 16:38:40 INFO  o.h.Version:44 - HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-18 16:38:41 INFO  o.h.a.c.Version:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-18 16:38:41 INFO  c.z.h.HikariDataSource:110 - HikariPool-1 - Starting...
+2023-03-18 16:38:41 INFO  c.z.h.HikariDataSource:123 - HikariPool-1 - Start completed.
+2023-03-18 16:38:41 INFO  o.h.d.Dialect:175 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-03-18 16:38:43 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-18 16:38:44 DEBUG c.m.c.JwtRequestFilter:242 - Filter 'jwtRequestFilter' configured for use
+2023-03-18 16:38:46 INFO  c.m.MPayApplication:61 - Started MPayApplication in 10.585 seconds (JVM running for 17.95)
+2023-03-18 16:39:44 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-18 16:39:47 DEBUG c.m.s.TransactionService:103 - Fetched all transaction for the merchants
+2023-03-18 16:39:47 DEBUG c.m.s.TransactionService:161 - Fetched all transaction for the members
+2023-03-18 16:40:16 DEBUG c.m.s.MerchantService:203 - Fetched all marchants successfully.
+2023-03-18 16:40:42 DEBUG c.m.s.MerchantService:203 - Fetched all marchants successfully.
+2023-03-18 16:42:31 DEBUG c.m.s.MerchantService:203 - Fetched all marchants successfully.
+2023-03-18 16:47:44 DEBUG c.m.s.MerchantService:208 - Fetched all marchants successfully.
+2023-03-18 16:47:48 DEBUG c.m.s.MerchantService:208 - Fetched all marchants successfully.
+2023-03-18 16:51:59 DEBUG c.m.s.MerchantService:207 - Fetched all marchants successfully.
+2023-03-18 16:55:08 DEBUG c.m.s.TransactionService:103 - Fetched all transaction for the merchants
+2023-03-18 16:55:16 DEBUG c.m.s.MerchantService:207 - Fetched all marchants successfully.
+2023-03-18 16:55:36 DEBUG c.m.s.TransactionService:103 - Fetched all transaction for the merchants
+2023-03-18 16:55:36 DEBUG c.m.s.TransactionService:161 - Fetched all transaction for the members
+2023-03-18 16:55:42 DEBUG c.m.s.MerchantService:207 - Fetched all marchants successfully.
+2023-03-18 17:00:34 DEBUG c.m.s.TransactionService:103 - Fetched all transaction for the merchants
+2023-03-18 17:00:34 DEBUG c.m.s.TransactionService:161 - Fetched all transaction for the members

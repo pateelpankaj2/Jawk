@@ -1,0 +1,63 @@
+plugins {
+	id 'java'
+	id 'war'
+	id 'org.springframework.boot' version '2.7.6'
+	id 'io.spring.dependency-management' version '1.1.0'
+}
+
+group = 'com.mpay'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '8'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation group: 'com.sendgrid', name: 'sendgrid-java', version: '4.6.4'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	//implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compileOnly 'org.projectlombok:lombok'
+	runtimeOnly 'com.h2database:h2'
+	runtimeOnly 'org.postgresql:postgresql'
+	//implementation 'org.flywaydb:flyway-core'
+	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+	annotationProcessor 'org.projectlombok:lombok'
+	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	//testImplementation 'org.springframework.security:spring-security-test'
+	implementation "com.squareup.okhttp3:okhttp:3.5.0"
+	implementation 'ca.uhn.hapi.fhir:hapi-fhir:5.7.0'
+	implementation 'ca.uhn.hapi.fhir:hapi-fhir-structures-r4:5.7.0'
+	implementation 'org.apache.commons:commons-collections4:4.3'
+	implementation 'com.google.code.gson:gson:2.8.7'
+	implementation group: 'org.json', name: 'json', version: '20220924'
+
+	// https://mvnrepository.com/artifact/mysql/mysql-connector-java
+	//implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.16'
+	// https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt
+	implementation 'io.jsonwebtoken:jjwt:0.9.1'
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-validation
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+	// https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-s3
+	implementation group: 'com.amazonaws', name: 'aws-java-sdk-s3', version: '1.11.923'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
+
+bootRun {
+	systemProperty "spring.profiles.active", "test,qa,ect"
+}
